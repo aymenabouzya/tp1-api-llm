@@ -1,0 +1,151 @@
+
+/* =====================================================
+   TP1 - Jakarta EE / PrimeFaces / Gemini
+   Feuille de style de l'interface de conversation
+   ===================================================== */
+
+/* Style général de la page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #263238;
+    margin: 0;
+    padding: 25px;
+}
+
+/* Formulaire principal */
+#form {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #dce2e8;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Titres et libellés */
+label,
+.ui-outputlabel,
+#form label {
+    font-weight: bold;
+    color: #263746;
+}
+
+/* Sélecteur du rôle système */
+.ui-selectonemenu {
+    min-width: 280px;
+    margin: 8px 10px;
+}
+
+/* Boutons */
+button,
+input[type="submit"],
+input[type="button"],
+.ui-button {
+    background-color: #2563a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 14px;
+    margin: 5px 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.ui-button:hover {
+    background-color: #174b80;
+}
+
+/* Zones de texte */
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 650px;
+    padding: 12px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #fbfcfe;
+    color: #263238;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #2563a6;
+    box-shadow: 0 0 4px rgba(37, 99, 166, 0.25);
+}
+
+/* Organisation des deux colonnes */
+#form\:paneltotal {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.topAligned {
+    vertical-align: top;
+}
+
+/* Colonnes de l'interface */
+#form\:panelgauche,
+#form\:paneldroit {
+    vertical-align: top;
+    padding: 12px;
+}
+
+/* Conversation */
+#form\:conversation {
+    min-height: 650px;
+    background-color: #f8fafc;
+}
+
+/* JSON de débogage */
+#form\:jsonrequete,
+#form\:jsonreponse {
+    background-color: #f1f5f9;
+    font-size: 12px;
+}
+
+/* Messages d'erreur JSF */
+.error,
+.ui-message-error,
+.ui-messages-error {
+    color: #b91c1c;
+    margin: 8px 0;
+}
+
+/* Mode debug */
+#form\:paneldebug {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #dce2e8;
+    border-radius: 6px;
+}
+
+/* Adaptation aux petits écrans */
+@media screen and (max-width: 900px) {
+    body {
+        padding: 10px;
+    }
+
+    #form {
+        padding: 12px;
+    }
+
+    textarea {
+        max-width: 100%;
+    }
+
+    #form\:paneltotal {
+        display: block;
+        overflow-x: auto;
+    }
+}
